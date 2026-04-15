@@ -9,14 +9,14 @@ stage('Checkout')
 git branch: 'main',url: 'https://github.com/demomvn.git'}
 }
 stage('Build'){
-steps{'mvn clean package'}
+steps{sh 'mvn clean package'}
 }
 stage('Test'){
-steps{'mvn test'}
+steps{sh 'mvn test'}
 }
 stage('Run Application'){
 steps{
-'java -jar  /target/MyMavenApp-1.0-SNAPSHOT.jar'}
+ sh 'java -jar  /target/MyMavenApp-1.0-SNAPSHOT.jar'}
 }}
 post{
 success{'yes'}
