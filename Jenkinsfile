@@ -6,7 +6,7 @@ maven 'MAVEN'
 stages{
 stage('Checkout')
 {steps{
-git branch: 'main',url: 'https://github.com/demomvn.git'}
+git branch: 'main',url: 'https://github.com/smshubham2005/demomvn.git'}
 }
 stage('Build'){
 steps{sh 'mvn clean package'}
