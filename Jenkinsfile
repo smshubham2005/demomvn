@@ -21,5 +21,5 @@ steps{
 post{
 success{'yes'}
 failure{'no'}
-
+}
 }
