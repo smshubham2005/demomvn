@@ -19,7 +19,7 @@ steps{
  sh 'java -jar  /target/MyMavenApp-1.0-SNAPSHOT.jar'}
 }}
 post{
-success{'yes'}
-failure{'no'}
+success{echo 'yes'}
+failure{echo 'no'}
 }
 }
